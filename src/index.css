@@ -1,0 +1,29 @@
+body::before{
+  content: "";
+  /* background: url("https://source.unsplash.com/collection/190728/1600x900") no-repeat center center/cover ; */
+  background: url("https://source.unsplash.com/1600x900/?quiz,quiz") no-repeat center center/cover ;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.4;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+html{
+  min-height: 100%;
+}
+form{
+  padding: 20px;
+  margin-top: 20px;
+}
+form button, form h5{
+  margin: 20px 0;
+}
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #ec407a;
+  box-shadow: none;
+}
